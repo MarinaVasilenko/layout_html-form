@@ -14,9 +14,9 @@
         action="https://mate-academy-form-lesson.herokuapp.com/create-application"
         method="POST">
       <fieldset class="container">
-        <legend>Personal Information</legend>
-        <div class="block">Sername:
-          <input type="text" name="sername">
+        <legend>Personal information</legend>
+        <div class="block">Surname:
+          <input type="text" name="surname">
         </div>
         <div class="block">Name:
           <input type="text" name="name"
@@ -27,10 +27,10 @@
           value="12" min="1"
           max="100">
         </div>
-        <div class="block">Full date of birth
+        <div class="block">Full date of birth:
           <input type="date" name="birthDay">
         </div>
-        <div class="block">I accept the term of the agreement
+        <div>I accept the term of the agreement
           <input type="checkbox" name="accept">
         </div>
       </fieldset>
@@ -38,9 +38,9 @@
         <legend>Registration</legend>
         <div class="block">E-mail:
           <input type="email" name="email"
-          value="email@example.com">
+          placeholder="email@example.com">
         </div>
-        <div class="block">Password:
+        <div>Password:
           <input type="password" name="password"
           minlength="5">
         </div>
@@ -57,7 +57,8 @@
           <input type="color" name="favoriteColor">
         </div>
         <div class="block">What time do you go to bed?
-          <input type="time" name="goToBed">
+          <input type="time" name="sleeping"
+            id="sleeping">
         </div>
         <div class="block">What are your favorite brand of cars?
           <select multiple="multiple">
@@ -66,17 +67,19 @@
             <option>Lada</option>
           </select>
         </div>
-        <div class="block">How do you rate out work?
+        <div>How do you rate out work?
           <input type="range" name="rateOutWork">
         </div>
       </fieldset>
       <fieldset class="container">
         <legend>Additional info</legend>
         <div class="block">Comments:
-          <input type="text" name="comments"
+          <textarea
+          name="comments" id="comments"
           maxlength="30">
+          </textarea>
         </div>
-        <div class="block">Would you recommend us?
+        <div>Would you recommend us?
           <select>
             <option>yes</option>
             <option>no</option>
