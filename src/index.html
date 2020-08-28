@@ -29,7 +29,8 @@
           <input
             type="number"
             name="age"
-            value="12" min="1"
+            value="12"
+            min="1"
             max="100"
           >
         </div>
@@ -50,8 +51,11 @@
           >
         </div>
         <div>Password:
-          <input type="password" name="password"
-          minlength="5">
+          <input
+            type="password"
+            name="password"
+            minlength="5"
+          >
         </div>
       </fieldset>
       <fieldset class="container">
@@ -61,11 +65,14 @@
             type="radio"
             name="loveCats"
             value="Yes"
-          > Yes
+          >
+            Yes
           <input
             type="radio"
             name="loveCats"
-            value="No"> No
+            value="No"
+          >
+            No
         </div>
         <div class="block">What is your favorite color?
           <input type="color" name="favoriteColor">
@@ -94,7 +101,8 @@
           <textarea
             name="comments"
             id="comments"
-            maxlength="30">
+            maxlength="30"
+          >
           </textarea>
         </div>
         <div>Would you recommend us?
@@ -105,7 +113,7 @@
         </div>
       </fieldset>
       <button  type="submit" onsubmit="onSubmit()">
-      Submit
+        Submit
       </button>
     </form>
   </body>
